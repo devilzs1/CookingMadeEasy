@@ -10,7 +10,7 @@ const dbUrl = (process.env.NODE_ENV && process.env.NODE_ENV === 'production') ? 
 // db.once('open',()=>{
 //     console.log('Connected')
 // });
-
+console.log(dbUrl);
 mongoose.set("strictQuery", true);
 
 try {
