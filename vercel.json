@@ -1,16 +1,25 @@
-
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ]
-}
+    "name": "Cooking Made Easy",
+    "version": 2,
+    "public": true,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/((?!.*\\.\\w+$).*)",
+        "dest": "/index.js"
+      },
+      {
+        "src": "/(.+\\.[a-z]+)$",
+        "dest": "/public/$1"
+      }
+    ]
+  }
