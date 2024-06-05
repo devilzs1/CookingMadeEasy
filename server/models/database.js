@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
 
-const dbUrl = (process.env.NODE_ENV && process.env.NODE_ENV === 'production')
-  ? process.env.MONGODB_URI1 + "recipeMadeEasy" + process.env.MONGODB_URI2
-  : process.env.MONGODB_URI;
+const dbUrl = process.env.MONGODB_URI1 + "recipeMadeEasy" + process.env.MONGODB_URI2;
+
+// const dbUrl = (process.env.NODE_ENV && process.env.NODE_ENV === 'production')
+//   ? process.env.MONGODB_URI1 + "recipeMadeEasy" + process.env.MONGODB_URI2
+//   : process.env.MONGODB_URI;
 
 // const db = mongoose.connection;
 // db.on('error',console.error.bind(console,'connection error:'));
