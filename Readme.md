@@ -15,7 +15,8 @@ Before you begin, ensure you have met the following requirements:
 To install `cookingMadeEasy`, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/devilzs1/CookingMadeEasy.git`
-2. Install the dependencies: `npm install`
+2. Navigate into the project directory: `cd cookingMadeEasy`
+3. Install the dependencies: `npm install`
 
 ## Using cookingMadeEasy
 
